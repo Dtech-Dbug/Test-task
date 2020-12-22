@@ -1,0 +1,48 @@
+<html>
+<body>
+<h1>JavaScript : to check whther a variable is a number, using typeOf</h1>
+
+<script type="text/javascript">
+/* var num1 = prompt('enter')
+ //parseInt(num1) //OR ANY NUMBER
+
+ //console.log(  )
+ console.log(typeof num1)
+
+ if(typeof num1 ==="number"){
+    document.write(num1 + " is a number <br/>");
+ }else{
+    document.write(num1 + " is not a number <br/>");
+ }*/
+
+
+
+// taking inputs
+ var  input1 = prompt('enter a number ')
+var input2 = prompt('enter the second number')  
+
+// converting the inputs to number, since prompt returns string
+var num1 =parseInt(input1)
+var num2 =parseInt(input2)
+
+//declaring our add function
+function add(num1 , num2){
+    var sum = num1 + num2
+    return sum
+}
+
+// showing the sum is odd or even in the console
+var plus = add(num1,num2)
+console.log(plus)
+if (plus % 2 == 0){ console.log(plus + " is"+' even')}
+else{ console.log(plus + " is " + "odd")}
+
+// user interface , basic
+document.write('The first number you entered is : ' + num1+ "") 
+document.write('The second number you entered is : ' + num2)
+document.write('Their sum is ' + add(num1 , num2))
+</script>
+
+</body>
+</html>
+</html>
